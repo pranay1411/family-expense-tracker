@@ -15,6 +15,7 @@ import com.pranay.familyexpensetracker.data.ExpenseStore
 import java.text.DateFormat
 import java.util.Date
 
+@OptIn(ExperimentalMaterial3Api::class)
 class MainActivity:ComponentActivity(){
  private val sms=registerForActivityResult(ActivityResultContracts.RequestPermission()){}
  private val notifications=registerForActivityResult(ActivityResultContracts.RequestPermission()){}
